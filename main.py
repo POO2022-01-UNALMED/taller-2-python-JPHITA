@@ -33,9 +33,10 @@ class Auto:
             original = False
         
         for a in self.asientos:
-            if self.registro != a.registro:
-                original = False
-                break
+            if a != None:
+                if self.registro != a.registro:
+                    original = False
+                    break
         
         if original:
             return "Auto original"
