@@ -26,7 +26,7 @@ class Auto:
         r = [1 if (a != None) else 0 for a in self.asientos]
         return sum(r)
 
-    def verificarintegridad(self):
+    def verificarIntegridad(self):
         original = True
 
         if self.registro != self.motor.registro:
